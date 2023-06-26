@@ -8,3 +8,5 @@
 2. Font "summerizer"
 3. OCR on pure text video
 
+## DATA
+https://www.kaggle.com/datasets/thomasqazwsxedc/alphabet-characters-fonts-dataset
