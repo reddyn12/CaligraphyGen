@@ -2,3 +2,4 @@ data/Images/
 data/character_fonts (with handwritten data).npz
 data/character_font.npz
 data/
+.DS_Store
