@@ -19,18 +19,48 @@ print("SAMPLE_Str", SAMPLE)
 # SAMPLE[0].show()
 # imageArr = np.array(list(IMG.getdata()), dtype=np.uint8)
 imageArr = np.array(IMG)
-print(imageArr)
-
-newImg = Image.fromarray(imageArr)
-newImg.show()
+print(imageArr[20:25, 20:25])
 
 
-def upscaler(image, width=400, height=400):
-    image = normalizeHelper(image)
+# newImg = Image.fromarray(imageArr)
+# newImg.show()
+
+
+
+def upscalerSimpleRepeat(image):
+    width = 63
+    height = 63
+    ans = np.zeros(shape=(width, height))
+
+    for h in height:
+        for w in width:
+            nH = None
+            nW = None
+            if h%2==0:
+                nH = h
+            if w%2==0:
+                nW = w
+            if(nW is None and nH is None):
+                pass
+            elif(nW is None):
+                pass
+            elif(nH is None):
+                pass
+            else:
+                ans[nH]
+
+    print(type(ans), ans.shape)
+    print(type(image), image.shape)
+
+
+
+
+    # image = normalizeHelper(image)
     
-    return image
+    # return image
 def normalizeHelper(image):
     ans = []
     
     return ans
 
+upscaler(imageArr)

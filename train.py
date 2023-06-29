@@ -28,7 +28,8 @@ def dimReduceHelper(x):
 
 data = torchvision.datasets.ImageFolder(root=PATH, 
                                         transform=Compose([greyScaleHelper, 
-                                                           torchvision.transforms.ToTensor(), 
+                                                           torchvision.transforms.ToTensor(),
+                                                        #    torch.flatten 
                                                         #    dimReduceHelper,
 
                                                            
